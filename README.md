@@ -1,4 +1,4 @@
-web-app-bootstrap
+Web Application Bootstrap v1.0
 =================
 
-Web App Bootstrap
+This product is released under MIT license.
