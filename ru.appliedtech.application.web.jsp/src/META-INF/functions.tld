@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+
+	<description>ESG functions library</description>
+	<display-name>ESG functions</display-name>
+	<tlib-version>1.1</tlib-version>
+	<short-name>u</short-name>
+	<uri>http://appliedtech.ru/application/jsp/util/functions</uri>
+
+	<function>
+		<description>Gets proxied context path</description>
+		<name>contextPath</name>
+		<function-class>ru.appliedtech.application.web.jsp.functions.UtilFunctions</function-class>
+		<function-signature>java.lang.String contextPath()</function-signature>
+		<example>
+      		&lt;c:out value="${u:contextPath}"&gt;
+    	</example>
+	</function>
+	
+	<function>
+		<description>Resolves relative URL (with proxied context path in mind)</description>
+		<name>resolveURL</name>
+		<function-class>ru.appliedtech.application.web.jsp.functions.UtilFunctions</function-class>
+		<function-signature>java.lang.String resolveURL(java.lang.String)</function-signature>
+		<example>
+      		&lt;c:out value="${u:resolveURL('relative/path/to/resource')}"&gt;
+    	</example>
+	</function>
+	
+	<function>
+		<description>Gets request URI (with proxied context path in mind)</description>
+		<name>requestURI</name>
+		<function-class>ru.appliedtech.application.web.jsp.functions.UtilFunctions</function-class>
+		<function-signature>java.lang.String requestURI()</function-signature>
+		<example>
+      		&lt;c:out value="${u:requestURI}"&gt;
+    	</example>
+	</function>
+	
+</taglib>
