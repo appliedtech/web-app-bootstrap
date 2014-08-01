@@ -45,8 +45,6 @@ public class DDLGeneratorUtil {
 
 	public static final String MYSQL_DIALECT_CLASSNAME = "org.hibernate.dialect.MySQL5InnoDBDialect";
 	public static final String MYSQL_DIALECT_CLASSNAME2 = "ru.appliedtech.storage.hibernate.MySQLInnoDBCaseSensitiveDialect";
-	public static final String API_ENTITIES_PACKAGE_NAME = "com.intel.esg.apiportal.engine.services.hibernate.beans";
-	public static final String PORTAL_ENTITIES_PACKAGE_NAME = "com.intel.esg.apiportal.web.services.hibernate.beans";
 	
 	public static void execute(String dialectClassName, String packageName, String outputFilePath) {
 		Configuration configuration = new Configuration();
